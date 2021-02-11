@@ -369,7 +369,7 @@ class StdoutWrapper(object):
     def write(self, data):
         if data:
             self.dataWritten = True
-        self._file.buffer.write(data)
+        self._file.write(data)
 
     def writelines(self, lines):
         for line in lines:
